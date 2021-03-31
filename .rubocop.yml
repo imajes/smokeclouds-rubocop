@@ -1,0 +1,49 @@
+require:
+  - rubocop-faker
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-thread_safety
+
+inherit_from:
+  - ./config/layout.yml
+  - ./config/lint.yml
+  - ./config/metrics.yml
+  - ./config/naming.yml
+  - ./config/style.yml
+  - ./config/bundler.yml
+  - ./config/faker.yml
+  - ./config/performance.yml
+  - ./config/rails.yml
+  - ./config/rspec.yml
+  - ./config/security.yml
+  - ./config/thread-safety.yml
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  CacheRootDirectory: tmp/rubocop
+  NewCops: enable
+  SuggestExtensions: false
+
+  DisplayCopNames:
+    Enabled: true
+
+  ExtraDetails:
+    Enabled: true
+
+  DisplayStyleGuide:
+    Enabled: true
+
+  Exclude:
+    - 'bin/**'
+    - 'config.ru'
+    - 'tmp/**/*'
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'scraps/**/*'
+    - 'app/javascript/**/*'
+    - 'app/packs/**/*'

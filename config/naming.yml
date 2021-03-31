@@ -1,0 +1,17 @@
+# cop configuration for Naming should be here
+#
+# Configuration parameters: EnforcedStyleForLeadingUnderscores.
+# EnforcedStyleForLeadingUnderscores: disallowed, required, optional
+Naming/MemoizedInstanceVariableName:
+  Enabled: true
+  EnforcedStyleForLeadingUnderscores: optional
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: true
+  PreferredName: e
+
+# how to name variables that have a number.
+# https://docs.rubocop.org/rubocop/cops_naming.html#namingvariablenumber
+Naming/VariableNumber:
+  Enabled: true
+  EnforcedStyle: snake_case

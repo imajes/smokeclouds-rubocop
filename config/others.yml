@@ -1,0 +1,22 @@
+#==================================================
+
+# this is enabled because it's actually a best practice improvement
+# Style/FrozenStringLiteralComment:
+#   Enabled: false
+
+# not sure why the body length matters. this is a good style tip
+# Style/Next:
+#   MinBodyLength: 5
+
+# curious as to why
+#Style/NumericLiterals:
+#  Enabled: false
+#
+# this should be enabled
+# Style/PercentLiteralDelimiters:
+#   Enabled: false
+
+# curious why - app/services/service.rb?
+# Style/SignalException:
+# EnforcedStyle: semantic
+#

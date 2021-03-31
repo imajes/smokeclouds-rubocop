@@ -1,0 +1,63 @@
+# Cop configuration for rubocop-rails here
+#
+Rails:
+  Enabled: true
+
+# This cop only reports false positives: all cases reported are done on purpose.
+# There's no value in keeping this enabled.
+Rails/ApplicationController:
+  Enabled: false
+
+# it's no longer necessary to split paths. it's much simpler to have one
+# quoted string. see https://github.com/rubocop-hq/rubocop#5823 for more.
+Rails/FilePath:
+  Enabled: true
+  EnforcedStyle: 'slashes'
+
+# list callbacks in run order - https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsactiverecordcallbacksorder
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+
+# require the use of find instead of others https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsfindbyid
+Rails/FindById:
+  Enabled: true
+
+# prevents use of inquiry method: https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsinquiry
+Rails/Inquiry:
+  Enabled: true
+
+# ensure mailers are postfixed with Mailer https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsmailername
+Rails/MailerName:
+  Enabled: true
+
+# don't use match in routes where it's not useful https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsmatchroute
+Rails/MatchRoute:
+  Enabled: true
+
+# use exclude not !include - https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsnegateinclude
+Rails/NegateInclude:
+  Enabled: true
+
+# ensure we use pluck over map - https://docs.rubocop.org/rubocop-rails/cops_rails.html#railspluck
+Rails/Pluck:
+  Enabled: true
+
+# use select instead of pluck, which is better for where clauses - https://docs.rubocop.org/rubocop-rails/cops_rails.html#railspluckinwhere
+Rails/PluckInWhere:
+  Enabled: true
+
+# this cop checks to see if you're using render inline. we use it because pagy, so disable. https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsrenderinline
+Rails/RenderInline:
+  Enabled: false
+
+# ensure use of render plain when it makes sense https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsrenderplaintext
+Rails/RenderPlainText:
+  Enabled: true
+
+# consistently use the same format for i18n calls https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsshorti18n
+Rails/ShortI18n:
+  Enabled: true
+
+# use .exists? where possible https://docs.rubocop.org/rubocop-rails/cops_rails.html#railswhereexists
+Rails/WhereExists:
+  Enabled: true

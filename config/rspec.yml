@@ -1,0 +1,15 @@
+# Cop configuration for rubocop-security here
+
+# this dictates the use of capy aliases to typical rspec methods
+# https://rubocop.readthedocs.io/projects/rspec/en/read-the-docs/cops_capybara/#capybarafeaturemethods
+RSpec/Capybara/FeatureMethods:
+  Enabled: false
+
+## FIXME: Temporarily disable this, to get clean
+RSpec/EmptyExampleGroup:
+  Enabled: true
+
+# This sets the default behavior of ToNot
+RSpec/NotToNot:
+  Enabled: true
+  EnforcedStyle: "to_not"
