@@ -5,11 +5,12 @@
 RSpec/Capybara/FeatureMethods:
   Enabled: false
 
-## FIXME: Temporarily disable this, to get clean
-RSpec/EmptyExampleGroup:
-  Enabled: true
-
 # This sets the default behavior of ToNot
 RSpec/NotToNot:
   Enabled: true
   EnforcedStyle: "to_not"
+
+# align left braces for lets etc
+RSpec/AlignLeftLetBrace:
+  Enabled: true
+
