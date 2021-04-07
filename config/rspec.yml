@@ -14,3 +14,27 @@ RSpec/NotToNot:
 RSpec/AlignLeftLetBrace:
   Enabled: true
 
+# ideally, we have fewer expectations per spec. But sometimes
+# it's reasonable to test a couple different views on an object.
+RSpec/MultipleExpectations:
+  Max: 2
+
+# with all the setup and establishing code, it's not unsual for
+# an example to be a bit longer than an average method.
+RSpec/ExampleLength:
+  Max: 20
+
+# many rails apps require a large number of objects to setup the
+# stall before a test can run. this ups the helper count to something
+# reasonable.
+RSpec/MultipleMemoizedHelpers:
+  Max: 10
+
+# This cop asserts that let! used in setup stages is bad, because often
+# there are many many uses of let! which are unnecessary.
+# But the thing is, with rails apps, it's almost always required to
+# bring along some establishing objects... let! is a reasonable best
+# practice to do this today.
+# more: https://github.com/rubocop/rubocop-rspec/issues/94
+RSpec/LetSetup:
+  enabled: false
