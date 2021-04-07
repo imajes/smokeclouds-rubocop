@@ -37,4 +37,4 @@ RSpec/MultipleMemoizedHelpers:
 # practice to do this today.
 # more: https://github.com/rubocop/rubocop-rspec/issues/94
 RSpec/LetSetup:
-  enabled: false
+  Enabled: false

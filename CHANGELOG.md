@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.2] - 2021-04-06
+
+- fix a typo
+
 ## [0.1.1] - 2021-04-06
 
 - tweaks to rspec cops to reduce some of the unclear noise
