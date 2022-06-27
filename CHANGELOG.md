@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.4] - 2022-06-27
+
+- updates the rubocop versions
+
 ## [0.1.3] - 2021-06-08
 
 - updates the rubocop versions
